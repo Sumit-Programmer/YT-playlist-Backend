@@ -8,7 +8,7 @@ import os
 app = Flask(__name__, static_folder='templates', static_url_path='')
 CORS(app)
 
-cred = credentials.Certificate("C:/Users/rk364/Desktop/sumit/WEBSITE/TY playlist/YT-Player/firebase-adminsdk.json")
+cred = credentials.Certificate("firebase-adminsdk.json")
 firebase_admin.initialize_app(cred, {
     'databaseURL': 'https://yt-player-48e44-default-rtdb.firebaseio.com/'  # Replace with your actual URL
 })
